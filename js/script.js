@@ -22,7 +22,7 @@ function enterClicked () {
   let profit = moneyGained - moneySpent;
   
   // Data given back to user
-  document.getElementById('surfaceArea').innerHTML = 'The surface area of your tetrahedron is ' + surfaceArea.toFixed(2) + 'cm²'
-  document.getElementById('volume').innerHTML = 'The volume of your tetrahedron is ' + volume.toFixed(2) + 'cm<sup>3</sup>'
-  document.getElementById('surfaceArea').innerHTML = 'The surface area of your tetrahedron is ' + surfaceArea.toFixed(2) + 'cm²'
+  document.getElementById('moneyGained').innerHTML = 'The amount of money you make from your team is ' + moneyGained.toFixed(2)
+  document.getElementById('moneySpent').innerHTML = 'The amount of money spent on your team is ' + moneySpent.toFixed(2)
+  document.getElementById('profit').innerHTML = 'The profit from your team is ' + profit.toFixed(2)
 }
