@@ -24,7 +24,7 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Surface area and Volume of a Tetrahedron</span>
+          <span class="mdl-layout-title">Profit for owner of a soccer team </span>
         </div>
         <!--- Hearder --->
       </header>
@@ -35,20 +35,23 @@
     <script src="./js/script.js"></script>
     <!--- Average Amount of Fans --->
       <form action="javascript:enterClicked()">
-        <label for="amountOfFans">Average Amount of Fans</label>
-        <input type="number" id="amount-of-fans" placeholder="eg.15000" step=".01"><br><br>
+        <label for="amount-of-fans">Average Amount of Fans</label>
+        <input type="number" id="amount-of-fans" placeholder="eg.15000" step="1" min="1"><br><br>
     <!--- Average Ticket Price --->
-        <label for="ticketPrice">Average Ticket Price</label>
+        <label for="ticket-price">Average Ticket Price</label>
         <input type="number" id="ticket-price" placeholder="eg.14.99" step=".01"><br><br>
     <!--- Players Wage --->
-        <label for="playerWage">Players Wage:</label>
+        <label for="player-wage">Players Wage per player:</label>
         <input type="number" id="player-wage" placeholder="eg.5000" step=".01"><br><br>
     <!--- Coaches Wage --->
-        <label for="coacheWage">Coaches Wage:</label>
-        <input type="number" id="coache-wage" placeholder="eg.9000" step=".01"><br><br>
+        <label for="coach-wage">Coaches Wage:</label>
+        <input type="number" id="coach-wage" placeholder="eg.9000" step=".01"><br><br>
+    <!--- Amount of Players --->
+        <label for="amount-of-players">Entre the amount of player:</label>
+        <input type="number" id="amount-of-players" placeholder="eg.15" step="1" min="11" max="26"><br><br>
     <!--- Games Played --->
-        <label for="gamesPlayed">Amount of Games Played:</label>
-        <input type="number" id="games-played" placeholder="eg.10" step=".01"><br><br>
+        <label for="games-played">Amount of Games Played:</label>
+        <input type="number" id="games-played" placeholder="eg.10" step="1" min="1"><br><br>
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
   Calculate
@@ -56,14 +59,15 @@
       </form>
     </p>
      <!-- Create a space where the user information will be displayed -->
+    <p></p>
     <div id="moneyGained"></div>
     <div id="moneySpent"></div>
-    <div id="profit">
-    </div>
+    <div id="profit"></div>
+   
     <center>
     <img src="./images/Stadium.png" width="300" height="187.5" alt="tetrahedron">
     </center>
       </main>
-      <h5></h5>
+      <h5>If you are an owner of a soccer team it is very important to be in control of where your money goes, Which is why it is very important to have a calculator like this one. The reason for that is it allows you to find ways you get you money, but it also helps with keeping your expeses in check. Finally, it allows you pool all the money you earn and lose to give you an overall financial calcuator which tells you how well your team is doing.</h5>
   </body>
 </html>
